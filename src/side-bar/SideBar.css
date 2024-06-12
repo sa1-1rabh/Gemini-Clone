@@ -1,0 +1,70 @@
+.side-bar{
+  /* border: 2px solid black; */
+  background-color: rgb(227, 227, 227);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  min-height:100vh;
+  padding: 25px 0px 0px 15px;
+}
+.side-bar .menu{
+  margin-left: 10px;
+  display: block;
+  cursor: pointer;
+}
+.side-bar .top{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.side-bar img{
+  width: 20px;
+}
+.side-bar .new-chat{
+  display: inline-flex;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: grey;
+  background-color: #e6eaf1;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.side-bar .recent{
+  display: flex;
+  flex-direction: column;
+  }
+.side-bar .recent-title{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* align-items: start; */
+} 
+.side-bar .recent-entry{
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 40px;
+  color: #282828;
+  cursor: pointer;
+  border-radius: 50px;
+  animation: fadeIn 1.5s;
+}
+.side-bar .recent-entry:hover{
+  background-color: #c2c6cb;
+} 
+
+.side-bar .bottom{
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width:600px){
+  .side-bar{
+    display: none;
+  }
+}
